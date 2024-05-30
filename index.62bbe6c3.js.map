@@ -1,0 +1,1 @@
+{"mappings":"AAGAA,QAAQC,IAAI","sources":["src/index.js"],"sourcesContent":["// import SimpleLightbox from 'simplelightbox';\n// import 'simplelightbox/dist/simple-lightbox.min.css';\n\nconsole.log('lol');\n"],"names":["console","log"],"version":3,"file":"index.62bbe6c3.js.map"}
