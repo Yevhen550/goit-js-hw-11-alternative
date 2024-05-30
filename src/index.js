@@ -4,10 +4,10 @@ import { fetchImage } from './js/api';
 
 const form = document.querySelector('.search-form');
 const gallery = document.querySelector('.gallery');
-const searchBtn = document.querySelector('[type=submit]');
 const loadMoreBtn = document.querySelector('.load-more');
 
 form.addEventListener('submit', onSubmit);
+loadMoreBtn.addEventListener('click', onLoadMoreBtn);
 
 function onSubmit(ev) {
   ev.preventDefault();
@@ -41,3 +41,7 @@ fetchImage().then(data => {
     }
   );
 });
+
+function onLoadMoreBtn(ev) {
+  console.log('click');
+}
