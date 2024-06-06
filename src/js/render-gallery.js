@@ -12,15 +12,19 @@ const gallery = document.querySelector('.gallery');
 //       comments,
 //       downloads,
 //     }) => {
-//       gallery.innerHTML = `<div class="photo-card">
-//                             <img src="${webformatURL}" alt="${tags}" loading="lazy" />
-//                             <div class="info">
-//                              <p class="info-item"><b>Likes</b> ${likes}</p>
-//                              <p class="info-item"><b>Views</b> ${views}</p>
-//                              <p class="info-item"><b>Comments</b> ${comments}</p>
-//                              <p class="info-item"><b>Downloads</b> ${downloads}</p>
-//                             </div>
-//                         </div>`;
+//       gallery.innerHTML = `
+//         <a class="gallery__link" href="${largeImageURL}">
+//           <div class="photo-card" id="${id}">
+//             <img class="gallery-item__img" src="${webformatURL}" alt="${tags}" loading="lazy" />
+//             <div class="info">
+//               <p class="info-item"><b>Likes</b>${likes}</p>
+//               <p class="info-item"><b>Views</b>${views}</p>
+//               <p class="info-item"><b>Comments</b>${comments}</p>
+//               <p class="info-item"><b>Downloads</b>${downloads}</p>
+//             </div>
+//           </div>
+//         </a>
+//       `;
 //     }
 //   );
 // }
@@ -56,3 +60,32 @@ export function renderGallery(images) {
 
   gallery.insertAdjacentHTML('beforeend', markup);
 }
+
+// export function renderGallery(images) {
+//   return images.forEach(
+//     ({
+//       id,
+//       largeImageURL,
+//       webformatURL,
+//       tags,
+//       likes,
+//       views,
+//       comments,
+//       downloads,
+//     }) => {
+//       gallery.innerHTML = `
+//         <a class="gallery__link" href="${largeImageURL}">
+//           <div class="photo-card" id="${id}">
+//             <img class="gallery-item__img" src="${webformatURL}" alt="${tags}" loading="lazy" />
+//             <div class="info">
+//               <p class="info-item"><b>Likes</b>${likes}</p>
+//               <p class="info-item"><b>Views</b>${views}</p>
+//               <p class="info-item"><b>Comments</b>${comments}</p>
+//               <p class="info-item"><b>Downloads</b>${downloads}</p>
+//             </div>
+//           </div>
+//         </a>
+//       `;
+//     }
+//   );
+// }

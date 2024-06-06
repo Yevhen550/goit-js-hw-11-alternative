@@ -59,7 +59,7 @@ img {
 .photo-card {
     margin: 5px;
      width: 300px;
-    background-color: #fff;
+    background-color: #d8adee;
     border: 1px solid #ccc;
      border-radius: 10px;
     transition: transform .2s;
