@@ -57,6 +57,7 @@ img {
 }
 
 .photo-card {
+    margin: 5px;
      width: 300px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -64,8 +65,17 @@ img {
     transition: transform .2s;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    
  }
 
  .load-more {
-    margin: 25px auto 0;
+    margin: 10px auto 0;
+    display: block;
+ }
+
+ .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
  }
